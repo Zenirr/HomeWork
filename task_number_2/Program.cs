@@ -12,10 +12,12 @@ namespace task_number_1
             int secondNumb = Convert.ToInt32(Console.ReadLine());
             if (firstNumb>secondNumb)
             Console.WriteLine($"{firstNumb} больше {secondNumb}");
-            else
+            else if(secondNumb>firstNumb)
             {
                 Console.WriteLine($"{secondNumb} больше {firstNumb}");
             }
+            else
+            Console.WriteLine("Числа равны")
         }
     }
 }
