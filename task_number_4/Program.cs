@@ -19,10 +19,8 @@ namespace task_number_4
 
             for (int i = 0;i<massLenght-1;i++ )
             {
-                if(mass[i]<mass[i+1])
+                if(max<mass[i+1])
                     max = mass[i+1];
-                else
-                    max = mass[i];
             }
 
             Console.WriteLine($"Максимальное чилсо = {max}");
