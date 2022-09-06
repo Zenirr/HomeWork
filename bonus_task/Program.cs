@@ -6,17 +6,36 @@ namespace bonus_task
     {
         static void Main(string[] args)
         {
-            Console.Write("Введите число: ");
-            int number = int.Parse(Console.ReadLine());
-
-            if(((number%7)==0)&&((number%23)==0))
+            bool isTriangleExist(int sideA, int sideB, int sideC)
             {
-                Console.WriteLine($"Число {number} кратно 7 и 23");
+                
+            if(((sideA+sideB)>sideC)&&((sideA+sideC)>sideB)&&((sideC+sideB)>sideA))
+            {
+                
+                return true;
             }
             else
             {
-                Console.WriteLine($"Число {number} не кратно 7 и 23");
+                return false;
             }
+            }
+
+            Console.Write("Введите первую сторону треугольника: ");
+            int sideA = int.Parse(Console.ReadLine());
+            Console.Write("Введите первую сторону треугольника: ");
+            int sideB = int.Parse(Console.ReadLine());
+            Console.Write("Введите первую сторону треугольника: ");
+            int sideC = int.Parse(Console.ReadLine());
+
+            if(isTriangleExist(sideA,sideB,sideC))
+            {
+                Console.WriteLine("Triangle is exist");
+            }
+            else
+            {
+                Console.WriteLine("Triangle doesn't exist");
+            }
+
         }
     }
 }

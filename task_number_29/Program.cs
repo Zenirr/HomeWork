@@ -17,19 +17,18 @@ namespace task_number_29
             
             
             Console.Write("[");
-            for (int i = 1; i<=elCount;i++)
+            for (int i = 0; i<=elCount-1;i++)
             {
-                mass [i-1] = rand.Next(min,max);
-                if(i-1 != elCount-1)
+                mass [i] = rand.Next(min,max);
+                if(i != elCount-1)
                 {
-                    Console.Write(mass[i-1]+", ");
+                    Console.Write(mass[i]+", ");
                 }
                 else
                 {
-                    Console.Write(mass[i-1]+"]");
+                    Console.Write(mass[i]+"]");
                 }
             }
-        
         }
     }
 }
