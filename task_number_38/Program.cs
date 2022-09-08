@@ -12,7 +12,7 @@ namespace task_number_38
 
             for (int i = 0; i<=3;i++)
             {
-                mass [i] = rand.Next(-100,101);
+                mass [i] = rand.Next(-100,101)+ rand.NextDouble();
                 Console.Write(mass[i]+" ");
             }
             max = mass [0];
