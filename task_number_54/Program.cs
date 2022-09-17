@@ -7,7 +7,6 @@ namespace task_number_54
         static void Main(string[] args)
         {
             int [,] matrix = new int [5,5];
-            double [] avg = new double [5];
             Random rand = new Random();
 
             
